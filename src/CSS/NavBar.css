@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header-nav{
+
+    padding: 1rem;
+    max-width: 100%;
+    margin:  auto;
+    background-color: #c5b6b6;
+    display: flex;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.left-nav>h1{
+    font-size: 36px;
+}
+.right-nav{
+    margin: auto;
+    
+    width: 35%;
+}
+.right-nav>ul{
+    font-size: 18px;
+    font-weight: 500;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.listStyle{
+    color: white;
+}
+.listStyle:hover{
+transform: scale(1.1);
+
+}
+
+    

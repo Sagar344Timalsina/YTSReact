@@ -1,0 +1,30 @@
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 85%;
+    background-color: antiquewhite;
+}
+.card-movie{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    width: 20%;
+    height: 35%;
+    background-color: rgb(150, 150, 212);
+    border-radius: 5px;
+
+}
+
+.card-movie:hover{
+    transform: scale(1.1);
+}
+img{
+    width:100%;
+    height: 35%;
+}
