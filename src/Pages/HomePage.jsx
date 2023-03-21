@@ -34,7 +34,7 @@ const HomePage = () => {
   setMovies(filtered);
   }
 
-  }, [inputValue])
+  }, [inputValue,movies])
 
 
 
@@ -49,14 +49,14 @@ const HomePage = () => {
       </div>
       <div className='main-div'>
         {
-          movies.map((m) => (
-            <div key={m.id} className="card-movie">
-              <Link to={`/details/${m.id}`}>
+          movies.map(({id,title,medium_cover_image,rating}) => (
+            <div key={id} className="card-movie">
+              <Link to={`/details/${id}`}>
               <div className="img-card" >
-                <img src={m.medium_cover_image} alt={m.title}/>
+                <img src={medium_cover_image} alt={title}/>
               </div>
-              <div className="title-card" style={{fontSize:"18px",color:"#fff"}}>{m.title}</div>
-              <div className="title-card" style={{color:"#f5c77e", fontWeight:"700"}}>{m.rating}</div>
+              <div className="title-card" style={{fontSize:"18px",color:"#fff"}}>{title}</div>
+              <div className="title-card" style={{color:"#f5c77e", fontWeight:"700"}}>{rating}</div>
               </Link>
             </div>
           ))

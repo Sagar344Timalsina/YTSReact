@@ -58,3 +58,33 @@ span{
 .btn:hover{
     transform: scale(1.2);
 }
+.suggested{
+    max-width: 65%;
+    padding: 1rem;
+    margin: 1rem auto;
+    /* background-color: aquamarine; */
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card-suggested{
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .8rem;
+    background-color: aliceblue;
+}
+.card-suggested>img{
+    
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+.Suggested-Title{
+    font-size: 24px;
+    margin-left: 2rem;
+
+}
+.link-color{
+    color: gray;
+}
